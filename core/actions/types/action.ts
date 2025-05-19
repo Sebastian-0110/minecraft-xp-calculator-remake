@@ -1,6 +1,6 @@
 import { XpAmount } from "./xp";
 
-export interface action {
+export interface Action {
     sources: string[],
     xpPerAction: XpAmount,
 }
