@@ -1,5 +1,4 @@
 import { Action } from "./types/action";
-import { XpRange, XpFlat, XpAmount } from "./types/xp";
 
 export const smeltingOrCooking: Action[] = [
     {

@@ -1,5 +1,4 @@
 import { Action } from "./types/action";
-import { XpAmount, XpFlat, XpRange } from "./types/xp";
 
 export const mobs: Action[] = [
     {
