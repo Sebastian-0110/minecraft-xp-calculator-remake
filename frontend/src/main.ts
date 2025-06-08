@@ -1,7 +1,7 @@
 import { createApp } from 'vue';
 
 import PrimeVue from "primevue/config";
-import Lara from "@primeuix/themes/lara";
+import Aura from "@primeuix/themes/aura";
 import Button from "primevue/button";
 
 import './style.css';
@@ -11,7 +11,7 @@ const app = createApp(App);
 
 app.use(PrimeVue, {
     theme: {
-        preset: Lara,
+        preset: Aura,
     },
 });
 
