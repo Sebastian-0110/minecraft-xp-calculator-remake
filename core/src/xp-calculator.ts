@@ -1,3 +1,5 @@
+import { InvalidLevelException } from "./exceptions/invalid-level-exception";
+
 function xpNeededToReachNextLevel(currentLevel: number): number {
     if (currentLevel >= 0 && currentLevel <= 15)
         return 2 * currentLevel + 7;
@@ -8,7 +10,7 @@ function xpNeededToReachNextLevel(currentLevel: number): number {
     if (currentLevel >= 31)
         return 9 * currentLevel - 158;
 
-    console.warn("Unknown level: " + currentLevel);
+    throw new InvalidLevelException(currentLevel);
 }
 
 function xpNeededToReachLevel(currentLevel: number, targetLevel: number): number {
