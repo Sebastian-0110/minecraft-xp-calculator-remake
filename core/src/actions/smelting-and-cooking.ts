@@ -1,6 +1,6 @@
 import { Action } from "./types/action";
 
-export const smeltingOrCooking: Action[] = [
+export const smeltingAndCooking: Action[] = [
     {
         sources: ["Ancient Debris"],
         xpPerAction: { value: 2 },
