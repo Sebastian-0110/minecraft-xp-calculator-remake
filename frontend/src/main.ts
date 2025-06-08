@@ -5,6 +5,8 @@ import Aura from "@primeuix/themes/aura";
 import Button from "primevue/button";
 
 import './style.css';
+import 'primeicons/primeicons.css'
+
 import App from './App.vue';
 
 const app = createApp(App);
