@@ -1,19 +1,20 @@
 import { Action } from "./types/action";
+import { createXpFlat } from "./types/xp";
 
 export const smeltingAndCooking: Action[] = [
     {
         sources: ["Ancient Debris"],
-        xpPerAction: { value: 2 },
+        xpPerAction: createXpFlat(2),
     },
 
     {
         sources: ["Diamond Ore", "Emerald Ore", "Gold Ore"],
-        xpPerAction: { value: 1 },
+        xpPerAction: createXpFlat(1),
     },
 
     {
         sources: ["Iron Ore", "Redstone Ore"],
-        xpPerAction: { value: 0.7 },
+        xpPerAction: createXpFlat(0.7),
     },
 
     {
@@ -28,21 +29,21 @@ export const smeltingAndCooking: Action[] = [
             "Raw Rabbit",
             "Raw Salmon",
         ],
-        xpPerAction: { value: 0.35 },
+        xpPerAction: createXpFlat(0.35),
     },
 
     {
         sources: ["Lapiz Ore", "Nether Quartz Ore"],
-        xpPerAction: { value: 0.2 },
+        xpPerAction: createXpFlat(0.2),
     },
 
     {
         sources: ["Wet Sponge", "Wood"],
-        xpPerAction: { value: 0.15 },
+        xpPerAction: createXpFlat(0.15),
     },
 
     {
         sources: ["Others"],
-        xpPerAction: { value: 0.1 },
+        xpPerAction: createXpFlat(0.1),
     },
 ];

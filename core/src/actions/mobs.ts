@@ -1,9 +1,10 @@
 import { Action } from "./types/action";
+import { createXpFlat, createXpRange } from "./types/xp";
 
 export const mobs: Action[] = [
     {
         sources: ["All passives (excluding bat)"],
-        xpPerAction: { min: 1, max: 3},
+        xpPerAction: createXpRange(1, 3),
     },
 
     {
@@ -32,46 +33,46 @@ export const mobs: Action[] = [
             "Zoglin",
             "Zombie Pigman"
         ],
-        xpPerAction: { value: 5 },
+        xpPerAction: createXpFlat(5),
     },
 
     {
         sources: ["Endermite"],
-        xpPerAction: { value: 3 },
+        xpPerAction: createXpFlat(3),
     },
 
     {
         sources: ["Large Slime", "Large Magma Cube"],
-        xpPerAction: { value: 4 },
+        xpPerAction: createXpFlat(4),
     },
 
     {
         sources: ["Medium Slime", "Medium Magma Cube"],
-        xpPerAction: { value: 2 },
+        xpPerAction: createXpFlat(2),
     },
 
     {
         sources: ["Small Slime", "Small Magma Cube"],
-        xpPerAction: { value: 1 },
+        xpPerAction: createXpFlat(1),
     },
 
     {
         sources: ["Spider Jockey", "Blaze", "Evoker", "Elder Guardian", "Guardian"],
-        xpPerAction: { value: 10 },
+        xpPerAction: createXpFlat(10),
     },
 
     {
         sources: ["Chicken Jockey"],
-        xpPerAction: { value: 22 },
+        xpPerAction: createXpFlat(22),
     },
 
     {
         sources: ["Baby Hostiles"],
-        xpPerAction: { value: 12 },
+        xpPerAction: createXpFlat(12),
     },
 
     {
         sources: ["Ravagaer"],
-        xpPerAction: { value: 20 },
+        xpPerAction: createXpFlat(20),
     },
 ]

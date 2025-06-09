@@ -1,23 +1,24 @@
 import { Action } from "./types/action";
+import { createXpRange } from "./types/xp";
 
 export const other: Action[] = [
     {
         sources: ["Bottle O' Enchanting"],
-        xpPerAction: { min: 3, max: 11 },
+        xpPerAction: createXpRange(3, 11),
     },
 
     {
         sources: ["Trading With Villager"],
-        xpPerAction: { min: 3, max: 6 },
+        xpPerAction: createXpRange(3, 6),
     },
 
     {
         sources: ["Breding Animals"],
-        xpPerAction: { min: 1, max: 7 },
+        xpPerAction: createXpRange(1, 7),
     },
 
     {
         sources: ["Catching Fish"],
-        xpPerAction: { min: 1, max: 6 },
+        xpPerAction: createXpRange(1, 6),
     },
 ];
